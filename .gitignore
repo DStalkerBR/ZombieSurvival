@@ -1,0 +1,18 @@
+# Ignore everything
+*
+# But not these files...
+!Standard Assets/
+!Standard Assets/Characters/
+!Standard Assets/Characters/ThirdPersonCharacter/
+!Standard Assets/Characters/ThirdPersonCharacter/Scripts/
+!Standard Assets/Characters/ThirdPersonCharacter/Scripts/*
+!Scenes/
+!Scenes/SampleScene.unity
+
+!.gitignore
+!AimSight.cs
+!AudioManager.cs
+!GunScript.cs
+!Recoil.cs
+!Target.cs
+!WeaponSwitching.cs
