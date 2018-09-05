@@ -2,10 +2,12 @@
 *
 # But not these files...
 !Standard Assets/
+!Animations/
 !Standard Assets/Characters/
 !Standard Assets/Characters/ThirdPersonCharacter/
 !Standard Assets/Characters/ThirdPersonCharacter/Scripts/
 !Standard Assets/Characters/ThirdPersonCharacter/Scripts/*
+!Standard Assets/Characters/ThirdPersonCharacter/Animator/ThirdPersonAnimatorController.controller
 !Scenes/
 !Scenes/SampleScene.unity
 
