@@ -14,6 +14,8 @@ public class Target : MonoBehaviour {
         health -= amount;
         if (health <= 0f)
         {
+            GetComponent<Animator>().SetBool("Attack", false);
+            GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;            
             StartCoroutine(Die());
         }
     }
@@ -27,7 +29,6 @@ public class Target : MonoBehaviour {
         }
         else
         {
-            GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
             GetComponent<Animator>().SetBool("isDead", true);
             yield return new WaitForSeconds(10);
             Destroy(gameObject);    
