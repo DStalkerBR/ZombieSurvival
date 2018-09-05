@@ -14,7 +14,6 @@ public class Target : MonoBehaviour {
         health -= amount;
         if (health <= 0f)
         {
-            GetComponent<Animator>().SetBool("Attack", false);
             GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;            
             StartCoroutine(Die());
         }
