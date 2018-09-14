@@ -32,7 +32,7 @@ public class SpawnZombie : MonoBehaviour {
 				} 
 				else {
 					currentNumberZombies = 0;	//Resetar count de spawn
-					Invoke ("StartWave", Random.Range(2f,3f));
+					Invoke ("StartWave", Random.Range(4f,6f));
 				}
 			}
 			return;
