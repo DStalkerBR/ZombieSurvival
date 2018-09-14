@@ -12,9 +12,9 @@ public class SpawnZombie : MonoBehaviour {
 	int [] maxNumberZombies; 
 	int currentNumberZombies = 0;
 	//Constantes
-	public const int NUMBER_ZOMBIES_W1 = 5;
-	public const int NUMBER_ZOMBIES_W2 = 6;
-	public const int NUMBER_ZOMBIES_W3 = 7;
+	public const int NUMBER_ZOMBIES_W1 = 15;
+	public const int NUMBER_ZOMBIES_W2 = 25;
+	public const int NUMBER_ZOMBIES_W3 = 35;
 	public const int RANGE_SPAWN = 2;
 
 	// Use this for initialization
