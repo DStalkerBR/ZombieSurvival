@@ -20,7 +20,7 @@ public class Target : MonoBehaviour {
         health -= amount;
         if (health <= 0f)
         {
-			GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;            
+			GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;            
             StartCoroutine(Die());
         }
     }
