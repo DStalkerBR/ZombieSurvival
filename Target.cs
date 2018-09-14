@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,13 +8,19 @@ public class Target : MonoBehaviour {
     public bool destructible;
     public GameObject destroyedVersion;
     private Animator animator;
+	public static int count = 0;
+    
+    public  void Awake()
+    {
+        count++;
+    }
 
     public void TakeDamage(float amount)
     {
         health -= amount;
         if (health <= 0f)
         {
-            GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;            
+			GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;            
             StartCoroutine(Die());
         }
     }
@@ -32,5 +38,6 @@ public class Target : MonoBehaviour {
             yield return new WaitForSeconds(10);
             Destroy(gameObject);    
         }
+        count--;
     }
 }
